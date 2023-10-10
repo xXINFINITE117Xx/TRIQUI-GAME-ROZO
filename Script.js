@@ -21,12 +21,12 @@ function pressedButton(event, pos) {
   }
   
   if (shift % 2 === 0) {
-    currentBtn.style.backgroundColor = "blue";
+    currentBtn.style.backgroundColor = "rgba(248, 117, 41, 0.892)";
     currentBtn.textContent = x;
     board[pos] = x;
     shift++;
   } else {
-    currentBtn.style.backgroundColor = "red";
+    currentBtn.style.backgroundColor = "rgba(250, 250, 95, 0.882)";
     currentBtn.textContent = o;
     board[pos] = o;     
     shift++;    
@@ -76,8 +76,6 @@ function validateGame() {
         return board[2];
     } else return false;
 }
-
-
 
 
 
